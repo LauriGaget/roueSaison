@@ -2,17 +2,29 @@
     padding: 0;
     margin: 0;
 }
+body{
+    display: flex;
+}
+a{
+    width: 10%;
+}
+
+.button-div{
+    width: 638px;
+    height: 510px;
+    position: absolute;
+}
 
 #cercle{
     
-    margin-left: 19%;
-    margin-top: 5%;
+    margin-left: 190px;
+    margin-top: 62px;
     text-align: center;
-    width: 750px;
-    height: 750px;
+    width: 900px;
+    height: 900px;
     background: aqua;
     border-radius: 50%;
-    border: solid 5px ;
+    border: solid 3px ;
     border-top-color:  linear-gradient(to right, #2fdc2e, #7ed600, #acce00, #cfc500, #ebbc18);
     padding: 0%;
     display: flex;
@@ -24,8 +36,8 @@
 #disque1{
     z-index: 0;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 100% 0 0;
     background-image: linear-gradient(90deg, rgb(37, 163, 10),rgb(138, 191, 54),rgb(239, 219, 97));
     position: absolute;
@@ -36,8 +48,8 @@
 #disque2{
     z-index: 0;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     background-image: linear-gradient(90deg, rgb(235, 216, 9),rgb(202, 60, 134));
     border-radius: 0 100% 0 0; 
     position: absolute;
@@ -46,8 +58,8 @@
 #disque3{
     z-index: 0;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 0 0 0 100%;
     background-image: linear-gradient(90deg, rgb(68, 144, 190),rgb(251, 254, 241));
     position: absolute;
@@ -57,8 +69,8 @@
 #disque4{
     z-index: 0;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 0 0 100%;
     background-image: linear-gradient(90deg, rgb(215, 125, 57),rgb(184, 86, 67));
     position: absolute;
@@ -67,10 +79,10 @@
 
 
 #quart1{
-    z-index: 2;
+    z-index: 3;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 100% 0 0;
     background: wheat;
     position: relative;
@@ -81,20 +93,20 @@
 }
 
 #quart2{
-    z-index: 2;
+    z-index: 1;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 0 100% 0 0;
-    
+    pointer-events: none;
     position: relative;
     padding: 0%;
 }
 #quart3{
-    z-index: 2;
+    z-index: 3;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 0 0 0 100%;
     background: wheat;
     position: relative;
@@ -105,10 +117,10 @@
 }
 
 #quart4{
-    z-index: 2;
+    z-index: 3;
     margin: 0;
-    height: 375px;
-    width: 375px;
+    height: 450px;
+    width: 450px;
     border-radius: 0 0 100%;
     background: wheat;
     position: relative;
@@ -121,4 +133,324 @@
 
 .saison{
     margin-top: 40%;
+}
+
+/* Bouton Div*/
+
+#b-ete{
+    left: 638px;
+    
+}
+
+#b-automne{
+    left: 638px;
+    top: 510px;
+}
+
+#b-hiver{
+    right: 638;
+    top: 510px;
+}
+
+
+
+
+/* arc de cerle dans les saisons */
+
+#ete-premier{
+    width: 350px;
+    height: 350px;
+    border-radius: 0 100% 0 0; 
+    background: red;
+    margin-top: 100px;
+    position: absolute;
+    
+
+}
+
+#ete-deuxieme{
+    width: 225px;
+    height: 225px;
+    border-radius: 0 100% 0 0; 
+    background: yellow;
+    margin-top: 125px;
+    
+
+}
+
+#printemps-premier{
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: absolute;
+    border-radius: 100% 0 0;
+    background: #2fdc2e;
+    
+}
+
+#printemps-deuxieme{
+    width: 225px;
+    height: 225px;
+    margin-top: 125px;
+    margin-left: 125px;
+    border-radius: 100% 0 0;
+    background: rgb(37, 163, 10);
+}
+
+#hiver-premier{
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    border-radius: 0 0 0 100%;
+    background: rgb(15, 72, 230);
+    position: absolute;
+
+}
+
+#hiver-deuxieme{
+    width: 225px;
+    height: 225px;
+    margin-left: 125px;
+    border-radius: 0 0 0 100%;
+    background: rgb(15, 151, 230);
+}
+
+#automne-premier{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 125px;
+    border-radius: 0 0 100%;
+    background: rgb(163, 75, 11);
+    position: absolute;
+}
+
+#automne-deuxieme{
+    width: 225px;
+    height: 225px;
+    margin-bottom: 125px;
+    border-radius: 0 0  100%;
+    background: rgb(248, 102, 49);
+}
+
+/*Text Wrapped*/
+
+/*ETE*/
+#warped2 {position: absolute; display: block; width:500px; height:450px; margin-left: 25px;}
+
+#warped2>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; transform-origin:50%
+100%; }
+
+#warped2 span{font-family:'Courgette', 'cursive';font-size:37px;font-weight:regular;font-style:normal;
+line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+#warped2 .w0 {-moz-transform: rotate(0.77rad);-webkit-transform: rotate(0.77rad);
+transform: rotate(0.77rad); width: 27px; height: 24px; left: 304.69px;
+top: 104.8px;}
+
+#warped2 .w1 {-moz-transform: rotate(0.83rad);-webkit-transform: rotate(0.83rad);
+transform: rotate(0.83rad); width: 15px; height: 24px; left: 328.65px;
+top: 123.59px;}
+
+#warped2 .w2 {-moz-transform: rotate(0.88rad);-webkit-transform: rotate(0.88rad);
+transform: rotate(0.88rad); width: 22px; height: 24px; left: 340.42px;
+top: 141.45px;}
+
+/*AUTOMNE*/
+
+#warped1 {position: absolute; display: block; width:500px; height:450px;}
+
+#warped1>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; transform-origin:50%
+100%; }
+
+#warped1 span{font-family:'Courgette';font-size:37px;font-weight:regular;font-style:normal;
+line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+#warped1 .w0 {-moz-transform: rotate(2.09rad);-webkit-transform: rotate(2.09rad);
+    transform: rotate(2.09rad); width: 27px; height: 24px; left: 379.47px;
+    top: 215.34px;}
+
+#warped1 .w1 {-moz-transform: rotate(2.16rad);-webkit-transform: rotate(2.16rad);
+    transform: rotate(2.16rad); width: 24px; height: 24px; left: 364.72px;
+    top: 236.15px;}
+
+#warped1 .w2 {-moz-transform: rotate(2.21rad);-webkit-transform: rotate(2.21rad);
+    transform: rotate(2.21rad); width: 15px; height: 24px; left: 354.94px;
+    top: 256.05px;}
+
+#warped1 .w3 {-moz-transform: rotate(2.27rad);-webkit-transform: rotate(2.27rad);
+    transform: rotate(2.27rad); width: 22px; height: 24px; left: 336.76px;
+    top: 274.4px;}
+
+#warped1 .w4 {-moz-transform: rotate(2.34rad);-webkit-transform: rotate(2.34rad);
+    transform: rotate(2.34rad); width: 35px; height: 24px; left: 307.73px;
+    top: 299.18px;}
+
+#warped1 .w5 {-moz-transform: rotate(2.42rad);-webkit-transform: rotate(2.42rad);
+    transform: rotate(2.42rad); width: 24px; height: 24px; left: 288.2px; top:
+    322.94px;}
+
+#warped1 .w6 {-moz-transform: rotate(2.48rad);-webkit-transform: rotate(2.48rad);
+    transform: rotate(2.48rad); width: 22px; height: 24px; left: 267.6px; top:
+    340.72px;}
+
+/*HIVER*/   
+
+#warped3 {position: absolute; display: block; width:455px; height:459px;}
+
+#warped3>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+
+#warped3 span{font-family:'Courgette';font-size:40px;font-weight:regular;font-style:normal;
+line-height:0.6; white-space:pre; overflow:visible; padding:0px;}
+
+#warped3 .w0 {-moz-transform: rotate(3.88rad);-webkit-transform: rotate(3.88rad);-o-transform:
+rotate(3.88rad);-ms-transform: rotate(3.88rad); transform: rotate(3.88rad);
+width: 35px; height: 24px; left: 132.28px; top: 320.7px;}
+
+#warped3 .w1 {-moz-transform: rotate(3.94rad);-webkit-transform: rotate(3.94rad);-o-transform:
+rotate(3.94rad);-ms-transform: rotate(3.94rad); transform: rotate(3.94rad);
+width: 13px; height: 24px; left: 122.59px; top: 302.39px;}
+
+#warped3 .w2 {-moz-transform: rotate(4rad);-webkit-transform: rotate(4rad);-o-transform:
+rotate(4rad);-ms-transform: rotate(4rad); transform: rotate(4rad); width:
+23px; height: 24px; left: 102.12px; top: 291.37px;}
+
+#warped3 .w3 {-moz-transform: rotate(4.06rad);-webkit-transform: rotate(4.06rad);-o-transform:
+rotate(4.06rad);-ms-transform: rotate(4.06rad); transform: rotate(4.06rad);
+width: 24px; height: 24px; left: 83.68px; top: 269.23px;}
+
+#warped3 .w4 {-moz-transform: rotate(4.12rad);-webkit-transform: rotate(4.12rad);-o-transform:
+rotate(4.12rad);-ms-transform: rotate(4.12rad); transform: rotate(4.12rad);
+width: 19px; height: 24px; left: 70.78px; top: 247.67px;}
+
+/*PRINTEMPS*/
+
+#warped {position: absolute; display: block; width:455px; height:459px;}
+
+#warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; transform-origin:50%
+100%; }
+
+#warped span{font-family:'Courgette';font-size:40px;font-weight:regular;font-style:normal;
+line-height:0.6; white-space:pre; overflow:visible; padding:0px;}
+
+#warped .w0 {-moz-transform: rotate(-1.05rad);-webkit-transform: rotate(-1.05rad);
+transform: rotate(-1.05rad); width: 27px; height: 24px; left: 31.65px;
+top: 198.89px;}
+
+#warped .w1 {-moz-transform: rotate(-0.99rad);-webkit-transform: rotate(-0.99rad);
+transform: rotate(-0.99rad); width: 19px; height: 24px; left: 50.51px;
+top: 175.16px;}
+
+#warped .w2 {-moz-transform: rotate(-0.94rad);-webkit-transform: rotate(-0.94rad);
+transform: rotate(-0.94rad); width: 13px; height: 24px; left: 65.55px;
+top: 157.96px;}
+
+#warped .w3 {-moz-transform: rotate(-0.88rad);-webkit-transform: rotate(-0.88rad);
+transform: rotate(-0.88rad); width: 38px; height: 24px; left: 71.88px;
+top: 132.97px;}
+
+#warped .w4 {-moz-transform: rotate(-0.81rad);-webkit-transform: rotate(-0.81rad);
+transform: rotate(-0.81rad); width: 16px; height: 24px; left: 100.24px;
+top: 111.15px;}
+
+#warped .w5 {-moz-transform: rotate(-0.76rad);-webkit-transform: rotate(-0.76rad);
+transform: rotate(-0.76rad); width: 24px; height: 24px; left: 110.01px;
+top: 92.57px;}
+
+#warped .w6 {-moz-transform: rotate(-0.68rad);-webkit-transform: rotate(-0.68rad);
+transform: rotate(-0.68rad); width: 38px; height: 24px; left: 125.17px;
+top: 70.96px;}
+
+#warped .w7 {-moz-transform: rotate(-0.6rad);-webkit-transform: rotate(-0.6rad);
+transform: rotate(-0.6rad); width: 26px; height: 24px; left: 160.87px;
+top: 46.91px;}
+
+#warped .w8 {-moz-transform: rotate(-0.54rad);-webkit-transform: rotate(-0.54rad);
+transform: rotate(-0.54rad); width: 21px; height: 24px; left: 185.36px;
+top: 31.53px;}
+
+#warped .w9 {-moz-transform: rotate(1.39rad);-webkit-transform: rotate(1.39rad);
+transform: rotate(1.39rad); width: 19px; height: 24px; left: 947.3px; top:
+465.9px;}
+
+#warped .w10 {-moz-transform: rotate(1.47rad);-webkit-transform: rotate(1.47rad);
+transform: rotate(1.47rad); width: 24px; height: 24px; left: 948.36px;
+top: 492.16px;}
+
+/*Cercle Video*/
+
+.exemple-cerlce{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: paleturquoise;
+    position: absolute;
+    border: solid 1px;
+    top: 100px;
+    
+    z-index: 8;
+}
+
+#bla-ete{
+    top: 200px;
+    right: 200px;
+}
+
+#vit-ete{
+    right:  150px;
+    top: 125px;
+}
+
+#vit-automne{
+    top: 250px;
+}
+
+#agr-automne{
+    top: 175px;
+}
+
+#vit-hiver{
+    top: 250px;
+    right: 250px;
+}
+#bla-hiver{
+    right: 100px;
+}
+
+#agr-hiver{
+    top: 175px;
+    right: 175px;
+}
+
+#bla-printemps{
+    top: 250px;
+}
+
+
+/* DIV VIDEO */
+
+#video{
+    width: 1280px;
+    height: 1024px;
+    position: absolute;
+    z-index: 12;
+    display: none;
+    opacity: 0;
+}
+
+#cross{
+    float: right;
+    z-index: 15;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 1175px;
+    display: none;
+    margin-top: 50px;
+    opacity: 0;
 }

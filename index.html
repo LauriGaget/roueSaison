@@ -1,60 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Norican&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a id="suivant">suivant</a>
-    <br>
-    <a id="precedent">précedent</a>
+
+<body id="body">
+
+    <video id="video" intrinsicsize="1280x1024">
+
+    </video>
+
+    <img src="src/image/cross.png" id="cross">
+
+    <div class="button-div" id="b-printemps"></div>
+
+    <div class="button-div" id="b-ete"></div>
+
+    <div class="button-div" id="b-hiver"></div>
+
+    <div class="button-div" id="b-automne"></div>
+
+
+
+
     <div id="cercle">
 
-    <div>  
-        <div id="disque1">
-            <h1 class="saison">Printemps</h1>
+        <!--Printemps-->
+
+        <div>
+            <div id="disque1">
+                <a class="exemple-cerlce" id="vit-printemps"></a>
+                <!--Nom Saison-->
+                <div id='warped'>
+                    <span class='w0'>P</span><span class='w1'>r</span><span class='w2'>i</span><span
+                        class='w3'>n</span><span class='w4'>t</span><span class='w5'>e</span><span
+                        class='w6'>m</span><span class='w7'>p</span><span class='w8'>s</span>
+                </div>
+
+                <div id="printemps-premier">
+                    <a class="exemple-cerlce" id="agr-printemps"></a>
+
+                    <div id="printemps-deuxieme">
+                        <a class="exemple-cerlce" id="bla-printemps"></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div id="quart1">
+
+            </div>
         </div>
-        <div id="quart1">
-            
+
+        <!--ETE-->
+
+        <div>
+            <div id="disque2">
+
+                <a class="exemple-cerlce" id="vit-ete"></a>
+
+                <!--Nom Saison-->
+                <div id='warped2'>
+                    <span class='w0'>É</span><span class='w1'>t</span><span class='w2'>é</span>
+                </div>
+                <!---->
+                <div id="ete-premier">
+
+                    <a class="exemple-cerlce" id="agr-ete"></a>
+
+                    <div id="ete-deuxieme">
+
+                        <a class="exemple-cerlce" id="bla-ete"></a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div id="quart2">
+
+            </div>
         </div>
+
+        <!--HIVER-->
+
+        <div>
+            <div id="disque3">
+                <a class="exemple-cerlce" id="vit-hiver"></a>
+
+                <div id="hiver-premier">
+                    <a class="exemple-cerlce" id="agr-hiver"></a>
+
+                    <div id="hiver-deuxieme">
+                        <a class="exemple-cerlce" id="bla-hiver"></a>
+                    </div>
+
+
+                </div>
+                <!--Nom Saison-->
+                <div id='warped3'>
+                    <span class='w0'>H</span><span class='w1'>i</span><span class='w2'>v</span><span
+                        class='w3'>e</span><span class='w4'>r</span>
+                </div>
+
+            </div>
+
+            <div id="quart3">
+
+            </div>
+        </div>
+
+        <!--AUTOMNE-->
+
+        <div>
+            <div id="disque4">
+                <a class="exemple-cerlce" id="vit-automne"></a>
+                <div id="automne-premier">
+                    <a class="exemple-cerlce" id="agr-automne"></a>
+
+                    <div id="automne-deuxieme">
+                        <a class="exemple-cerlce" id="bla-automne"></a>
+                    </div>
+
+
+                </div>
+                <!--Nom Saison-->
+                <div id='warped1'>
+                    <span class='w0'>A</span><span class='w1'>u</span><span class='w2'>t</span><span
+                        class='w3'>o</span><span class='w4'>m</span><span class='w5'>n</span><span class='w6'>e</span>
+                </div>
+
+
+            </div>
+            <div id="quart4">
+
+            </div>
+        </div>
+
+
     </div>
 
-    <div>   
-        <div id="disque2">  
-            <h1 class="saison">Ete</h1>
-        </div>
-        <div id="quart2">
 
-        </div>
-    </div> 
-    
-    <div>
-        <div id="disque3">
-            <h1 class="saison">Hiver</h1>
-        </div>  
-        <div id="quart3">
-            
-        </div> 
-    </div>
-    
-    <div>
-        <div id="disque4">
-            <h1 class="saison">Automne</h1>
-        </div>    
-        <div id="quart4">
+    <script type="text/javascript" src="js/librairies//zepto.js"></script>
+    <script type="text/javascript" src="js/librairies//zepto.fx.js"></script>
+    <script type="text/javascript" src="js/librairies//zepto.fxmethod.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
-        </div>
-    </div>    
-
-    </div>
-    <script type="text/javascript" src="js/zepto.js"></script>
-   <script type="text/javascript" src="js/zepto.fx.js"></script>
-   <script type="text/javascript" src="js/zepto.fxmethod.js"></script>
-   <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-
-    
+    <script type="text/javascript" src="js/DATA.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
